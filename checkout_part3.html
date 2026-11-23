@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EazyCart - Checkout</title>
+<link rel="stylesheet" href="part3.css">
+</head>
+<body>
+<header>
+    <h1>EazyCart</h1>
+    <a href="cart.html">Cart</a>
+</header>
+<div class="container">
+    <h2>Checkout</h2>
+    <p>Enter your details to place the order.</p>
+    <div id="checkoutTotal"></div>
+    <form id="checkoutForm">
+        <label>Name</label>
+        <input type="text" name="customer_name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone</label>
+        <input type="text" name="phone" required>
+
+        <label>Address</label>
+        <textarea name="address" required></textarea>
+
+        <label>City</label>
+        <input type="text" name="city" required>
+
+        <label>Pincode</label>
+        <input type="text" name="pincode" required>
+
+        <label>Payment Method</label>
+        <select name="payment_method" required>
+            <option value="">Select</option>
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="UPI">UPI</option>
+            <option value="Card">Card</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+    </form>
+    <p id="message"></p>
+</div>
+<script src="part3.js"></script>
+</body>
+</html>
